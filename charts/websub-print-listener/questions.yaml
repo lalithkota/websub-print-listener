@@ -1,0 +1,10 @@
+questions:
+- variable: hostname
+  type: string
+  label: Hostname
+
+- variable: global.keycloakBaseUrl
+  description: Required for Authentication.
+  type: string
+  label: Keycloak Base URL
+  show_if: "opensearch.enabled=true&&opensearch.dashboards.enabled=true"
